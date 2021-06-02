@@ -1,35 +1,57 @@
-const start_id = window.document.querySelector('#start')
-const timer_form = window.document.querySelector('#timer_id')
-var second = 0
-var hour = 0
-var minute = 0
-let click = 0
-start_id.addEventListener('click', startCount)
+const btn_start = window.document.getElementById('start')
+const btn_reset = window.document.getElementById('stop')
+const displayTimer = window.document.getElementById('timer_id')
+let hour = 0
+let minute = 0
+let second = 0
 
-function startCount() {
-    click++
-    if(click == 1){
-        timeCycle()
+let displayHour = 0
+let displayMinute = 0
+let displaySecond = 0
+
+let interval = null
+let status = "stopped"
+
+function clickStartStop() {
+    if(status==="stopped"){
+        window.document.getElementById('start').innerHTML = 'Parar'
+        interval = window.setInterval(counting, 1000)
+        status = "started"
+        console.log(`status:${status}`)
+    }
+
+    else{
+        document.getElementById('start').innerHTML = "Começar"
+        status = "stopped"
+        window.clearInterval(interval)
+        console.log(`status:${status}`)
     }
 }
 
-function timeCycle(){
-
-    
-    timer_form.innerHTML = '00:00:00'
+function counting(){
     second++
 
-    if(second == 60){
+    if(second/60===1){
         minute++
         second = 0
     }
-
-    if(minute == 60){
+    if(minute/60===1){
         hour++
         minute = 0
     }
 
-    timer_form.innerHTML = `${hour}:${minute}:${second}`
-    console.log(`segundo:${second}, minuto:${minute}, hora:${hour}`)
-    setTimeout("timeCycle()", 1000)
+    second<10||second===0? displaySecond= '0'+ second : displaySecond = second
+    minute<10||minute===0? displayMinute= '0'+ minute : displayMinute = minute
+    hour<10||hour===0? displayHour= '0'+ hour : displayHour = hour
+
+    displayTimer.innerHTML = `${displayHour}:${displayMinute}:${displaySecond}`
+}
+
+function reset(){
+    hour = 0
+    minute = 0
+    second = 0
+    window.clearInterval(interval)
+    status = 'started'
+    displayTimer.innerHTML = '00:00:00'
 }

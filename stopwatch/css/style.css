@@ -62,9 +62,18 @@ footer{
     cursor: pointer;
 }
 
-#start_id{
+#buttons_container{
     display: flex;
-    margin-left: 9em;
+    margin-left: 4.5em;
+    text-align: center;
+}
+
+#start{
+    margin-right: 0.5em;
+}
+
+#stop{
+    margin-right: 0.5em;
 }
 
 a{

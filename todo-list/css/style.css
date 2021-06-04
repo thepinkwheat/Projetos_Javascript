@@ -29,32 +29,37 @@ body{
     color: white;
     height: 4.5vh;
     font-size: 1vw;
-    padding-top:0.5vw;
+    padding-top:1vh;
     padding-bottom:0.5vw;
     padding-left:2.8vw;
     cursor: pointer;
     display:flex;
+    border-radius: 3px;
 }
 
-.create-item>.subtitle{
-    font-size: 4vh;
+.subtitle{
+    font-size: 3vh;
 }
 
 .app{
-    height: 25vh;
-    display:block;
+    height: auto;
     background-color:#313442;
-    width:100vw;
+    width:auto;
     margin: auto;
     margin-top: 2em;
     padding:2em;
+    display:block;
 }
 
 .input-txt{
-    height:3vh;
+    transition:1s;
+    height:5vh;
     width:20vw;
     border:none;
     margin-bottom:3vh;
+    background-color:#262833;
+    color: white;
+    padding-left:1vw;
 }
 
 nav{
@@ -71,6 +76,7 @@ nav{
 footer{
     text-align: center;
     font-style: italic;
+    font-size: 2vh;
 }
 
 a{
@@ -85,6 +91,20 @@ a:hover{
     transition:0.5s;
 }
 
-.create-item{
+.input-txt:hover{
+    transition:1s;
+    background-color:white;
+    color: black;
+}
 
+.item-list{
+    border: none;
+    height: auto;
+    width: 20em;
+    background-color:white;
+    color: black;
+    margin-top: 1.5em;
+    padding-left:1em;
+    padding-top: 1vh;
+    padding-bottom:1vh;
 }

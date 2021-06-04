@@ -1,17 +1,24 @@
-const btn_randozimer = window.document.getElementById('randomizer')
-const display = window.document.getElementById('random-images')
-btn_randozimer.addEventListener('click', randomize)
-let contador = 0
+const btn_createItem = window.document.getElementById('create-item')
+const itemList = window.document.getElementById('list')
+let itemValue = window.document.getElementById('itemValue')
 
-function randomize(){
-    console.log('Function randomize = true')
-    let html = ''
+btn_createItem.addEventListener('click', createItem)
 
-    html += '<div class="img-slot">'
-    html += `<img class="img-model" src="https://picsum.photos/200/300?random=${contador++}">`
-    html += `<p class="text-img">Imagem aleatória ${contador}</p>`
-    html += '</div>'
+function createItem(){
+    let item = document.createElement('div')
+    let btnItem = document.createElement('button')
+    let textItem = document.createTextNode(itemValue.value)
 
-    console.log(html)
-    display.innerHTML += html
+    btnItem.innerText = 'Excluir'    
+    btnItem.className = 'btn'
+    item.className = "item-list"
+
+    
+    
+    item.appendChild(btnItem)
+    item.appendChild(textItem)
+
+    console.log(item)
+
+    itemList.appendChild(item)
 }

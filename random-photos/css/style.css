@@ -47,6 +47,13 @@ body{
     margin-top: 3em;
 }
 
+.text-img{
+    color:black;
+    text-align: center;
+    font-size:1.5em;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
 .container{
     display:block;
     background-color:#313442;

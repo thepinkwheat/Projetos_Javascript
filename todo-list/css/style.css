@@ -37,6 +37,17 @@ body{
     border-radius: 3px;
 }
 
+
+.delete{
+    border: none;
+    font-family: 'Open Sans';
+    background-color:#262833;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right:10%;
+}
+
 .subtitle{
     font-size: 3vh;
 }
@@ -103,6 +114,7 @@ a:hover{
     width: 20em;
     background-color:white;
     color: black;
+    display: flex;
     margin-top: 1.5em;
     padding-left:1em;
     padding-top: 1vh;

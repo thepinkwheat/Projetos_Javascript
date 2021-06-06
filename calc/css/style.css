@@ -31,11 +31,11 @@ body{
 }
 
 .btn-number{
-    
+    display: inline-block;
 }
 
 .btn-especials{
-
+    display: inline-block;
 }
 
 nav{

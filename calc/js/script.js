@@ -16,6 +16,8 @@ let plus = window.document.getElementById('plus')
 let minus = window.document.getElementById('minus')
 let multiplier = window.document.getElementById('multiplier')
 let clearLast = window.document.getElementById('clearLast')
+let floatNumber = window.document.getElementById('floatNumber')
+let divisor = window.document.getElementById('divisor')
 
 let equal = window.document.getElementById('btn-equal')
 
@@ -35,6 +37,8 @@ plus.addEventListener('click', insertOnDisplay)
 minus.addEventListener('click', insertOnDisplay)
 multiplier.addEventListener('click', insertOnDisplay)
 back.addEventListener('click', backOne)
+floatNumber.addEventListener('click', insertOnDisplay)
+divisor.addEventListener('click', insertOnDisplay)
 
 clear.onclick = function clearDisplay(){
 

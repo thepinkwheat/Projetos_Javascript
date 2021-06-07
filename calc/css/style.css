@@ -23,19 +23,47 @@ body{
 .app-calculator{
     height: auto;
     background-color:#313442;
-    width:auto;
+    width:35vw;
     margin: auto;
-    margin-top: 2em;
-    padding:2em;
-    display:grid;
+    margin-top: 5vh;
+    padding:2vh;
+    text-align: center;
+}
+
+.display-calculator{
+    background-color:white;
+    width: auto;
+    margin:auto;
+    height: 5vh;
+    font:normal 4vh Arial;
+    color: black;
+    margin-bottom: 5vh;
+    padding: 1vh 5vh;
+    text-align: right;
+}
+
+.calculator-buttons{
+    margin: auto;
 }
 
 .btn-number{
-    display: inline-block;
+    display: inline;
+    height: auto;
+    width: 5vw;
+    font-size:3vw;
+    border:none;
+    margin: 0.5vw;
+    cursor: pointer;
 }
 
 .btn-especials{
     display: inline-block;
+    height: auto;
+    width: 5vw;
+    font-size:3vw;
+    border:none;
+    margin: 0.5vw;
+    cursor: pointer;
 }
 
 nav{

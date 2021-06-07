@@ -2,12 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-@font-face {
-    font-family: 'time';
-    src: url('../fonts/clock.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 *{
     font-family: Arial, sans-serif;
@@ -28,6 +22,7 @@ body{
     margin-top: 5vh;
     padding:2vh;
     text-align: center;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.356);
 }
 
 .display-calculator{
@@ -37,8 +32,8 @@ body{
     height: 5vh;
     font:normal 4vh Arial;
     color: black;
-    margin-bottom: 5vh;
-    padding: 1vh 5vh;
+    margin:5vh 5vh;
+    padding: 2vh 5vh;
     text-align: right;
 }
 
@@ -52,7 +47,7 @@ body{
     width: 5vw;
     font-size:3vw;
     border:none;
-    margin: 0.5vw;
+    margin: 0.25vw;
     cursor: pointer;
 }
 
@@ -62,8 +57,19 @@ body{
     width: 5vw;
     font-size:3vw;
     border:none;
-    margin: 0.5vw;
+    margin: 0.25vw;
     cursor: pointer;
+    background-color:#262833;
+    color: white;
+}
+
+.btn-especials:hover{
+    background-color:#040405;
+}
+
+.btn-number:hover{
+    background-color:#040405;
+    color: white;
 }
 
 nav{
@@ -75,10 +81,23 @@ nav{
     font-size: 4vw;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.356);
 }
 
 footer{
     text-align: center;
     font-style: italic;
     font-size: 2vh;
+}
+
+#btn-zero{
+    width: 11vw;
+    height:auto;
+    margin-right: 0.5vw;
+}
+
+#btn-equal{
+    width: 5vw;
+    height:16vh;
+    padding: 2vh;
 }

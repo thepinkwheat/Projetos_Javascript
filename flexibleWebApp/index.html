@@ -18,6 +18,22 @@
             <h2>Config</h2>
             <h3>Background color</h3>
                 <aside class="btn-group">
+                    <button class="btn-color" id="red" onclick="changeBackColor('red')"></button>
+                    <button class="btn-color" id="green" onclick="changeBackColor('green')"></button>
+                    <button class="btn-color" id="blue" onclick="changeBackColor('blue')"></button>
+                    <button class="btn-color" id="yellow" onclick="changeBackColor('yellow')"></button>
+                    <button class="btn-color" id="brown" onclick="changeBackColor('brown')"></button>
+                    <button class="btn-color" id="black" onclick="changeBackColor('black')"></button>
+                    <button class="btn-color" id="purple" onclick="changeBackColor('purple')"></button>
+                    <button class="btn-color" id="orange" onclick="changeBackColor('orange')"></button>
+                    <button class="btn-color" id="cyan" onclick="changeBackColor('cyan')"></button>
+                    <button class="btn-color" id="pink" onclick="changeBackColor('pink')"></button>
+                    <button class="btn-color" id="grey" onclick="changeBackColor('grey')"></button>
+                    <button class="btn-color" id="sakurapink"onclick="changeBackColor('sakurapink')"></button>
+                </aside>
+                <h3>Text color</h3>
+
+                <aside class="btn-group">
                     <button class="btn-color" id="red" onclick="changeTextColor('red')"></button>
                     <button class="btn-color" id="green" onclick="changeTextColor('green')"></button>
                     <button class="btn-color" id="blue" onclick="changeTextColor('blue')"></button>
@@ -31,12 +47,13 @@
                     <button class="btn-color" id="grey" onclick="changeTextColor('grey')"></button>
                     <button class="btn-color" id="sakurapink"onclick="changeTextColor('sakurapink')"></button>
                 </aside>
+
                 <aside class="btn-group">
                     <button class="btn-normal" onclick="createTittle()">Criar um título</button>
                     <button class="btn-normal" onclick="createLorem()">Criar um Lorem</button>
                     <button class="btn-normal" onclick="createParagraph()">Criar um parágrafo</button>
                     <button class="btn-normal" onclick="reset()">Resetar</button> 
-                    <input type="file" class="btn-normal" accept="image/*" onchange="createImage(event)"/>
+                        <input type="file" class="btn-normal" accept="image/*" onchange="createImage(event)" alt="Adicionar uma imagem">
                 </aside>
                 
         </sidebar>

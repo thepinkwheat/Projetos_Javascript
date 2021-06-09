@@ -1,7 +1,7 @@
 let html = window.document.getElementById('webApp')
 imageCounter = 0
 
-    function changeTextColor(color = 'none'){
+    function changeBackColor(color = 'none'){
         if(color == 'pink'){
             html.style.background = "rgb(255, 85, 113)"
         } else if(color == 'sakurapink'){
@@ -10,6 +10,18 @@ imageCounter = 0
             html.style.background = "rgb(51, 25, 7)"
         }else{
             html.style.background = color
+        }
+    }
+
+    function changeTextColor(color = 'none'){
+        if(color == 'pink'){
+            html.style.color = "rgb(255, 85, 113)"
+        } else if(color == 'sakurapink'){
+            html.style.color = 'pink'
+        }else if(color == 'brown'){
+            html.style.color = "rgb(51, 25, 7)"
+        }else{
+            html.style.color = color
         }
     }
 

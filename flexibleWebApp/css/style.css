@@ -29,13 +29,12 @@ main{
 }
 
 main>sidebar{
-    height:auto;
+    height:70vh;
     min-height:70vh;
     width: 20%;
     background-color:#21222C;
     padding:2vw;
     font-size: 2vw;
-    overflow:auto; 
     display:inline-block;
     max-width:30vw;
 }
@@ -59,9 +58,9 @@ main>sidebar{
 main>.app{
     height: auto;
     min-height:70vh;
-    width:70%;
+    width:75%;
     max-height: 60vh;
-    max-width:60vw;
+    max-width:68vw;
     background-color:#4467A4;
     overflow:auto; 
     display:inline-block;
@@ -123,6 +122,22 @@ footer>a:hover{
     color: inherit;
     color:#606582;
     transition:0.5s;
+}
+
+input[type="file"]{
+    border: none;
+    height:3vh;
+    min-height: 10px;
+    margin: 0.2vw;;
+    width: 10vw;
+    display: inline-block;
+    cursor: pointer;
+    color:transparent;
+    padding:5%;
+}
+
+input[type="file"]:hover{
+    color:transparent;
 }
 
 .image-app{

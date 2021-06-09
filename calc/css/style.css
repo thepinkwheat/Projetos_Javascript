@@ -101,3 +101,15 @@ footer{
     height:16vh;
     padding: 2vh;
 }
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration:none;
+    color: inherit;
+    color:#606582;
+    transition:0.5s;
+}

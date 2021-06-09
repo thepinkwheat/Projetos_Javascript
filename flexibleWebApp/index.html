@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex WebApp by PinkWheat</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,10 +14,65 @@
     </header>
 
     <main>
-        <article>
-            
-        </article>
+        <sidebar>
+            <h2>Config</h2>
+            <h3>Background color</h3>
+                <aside class="btn-group">
+                    <button class="btn-color" id="red" onclick="changeTextColor('red')"></button>
+                    <button class="btn-color" id="green" onclick="changeTextColor('green')"></button>
+                    <button class="btn-color" id="blue" onclick="changeTextColor('blue')"></button>
+                    <button class="btn-color" id="yellow" onclick="changeTextColor('yellow')"></button>
+                    <button class="btn-color" id="brown" onclick="changeTextColor('brown')"></button>
+                    <button class="btn-color" id="black" onclick="changeTextColor('black')"></button>
+                    <button class="btn-color" id="purple" onclick="changeTextColor('purple')"></button>
+                    <button class="btn-color" id="orange" onclick="changeTextColor('orange')"></button>
+                    <button class="btn-color" id="cyan" onclick="changeTextColor('cyan')"></button>
+                    <button class="btn-color" id="pink" onclick="changeTextColor('pink')"></button>
+                    <button class="btn-color" id="grey" onclick="changeTextColor('grey')"></button>
+                    <button class="btn-color" id="sakurapink"onclick="changeTextColor('sakurapink')"></button>
+                </aside>
+                <aside class="btn-group">
+                    <button class="btn-normal" onclick="createTittle()">Criar um título</button>
+                </aside>
+                
+        </sidebar>
+        <container class="app" id="webApp">
+
+        </container>
     </main>
 
+    <footer>
+        <footer>
+            <h6>FlexWeb App by <a href="https://github.com/thepinkwheat" target="_blank">PinkWheat</a></h6>
+        </footer>
+    </footer>
 </body>
 </html>
+<script>
+    let html = window.document.getElementById('webApp')
+
+    function changeTextColor(color = 'none'){
+        if(color == 'pink'){
+            html.style.background = "rgb(255, 85, 113)"
+        } else if(color == 'sakurapink'){
+            html.style.background = 'pink'
+        }else if(color == 'brown'){
+            html.style.background = "rgb(51, 25, 7)"
+        }else{
+            html.style.background = color
+        }
+    }
+
+    function createTittle(){
+        let userTittle = prompt('Diga o título que deseja colocar no app...')
+        if(userTittle != null){
+            let tittle = document.createElement('div')
+            tittle.class = 'tittle-app'
+            tittle.innerHTML = `<h1>${userTittle}</h1>`
+            tittle.style.fontSize = '2vh'
+            console.log('O título foi criado...')
+
+            html.appendChild(tittle)
+        }
+    }
+</script>

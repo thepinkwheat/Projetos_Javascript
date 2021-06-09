@@ -17,11 +17,86 @@ nav{
     background-color:#262833;
     color: black;
     display: flex;
-    height: 1em;
+    height: 10vh;
     padding:0.5em;
     font-size: 4vw;
     color: white;
     font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    display:block;
+}
+
+main>sidebar{
+    height:auto;
+    min-height:70vh;
+    width: 20%;
+    background-color:#21222C;
+    padding:2vw;
+    font-size: 2vw;
+    overflow:auto; 
+    display:inline-block;
+    max-width:30vw;
+}
+
+.btn-normal{
+    height: 4vh;
+    width: 100%;
+    border:none;
+    border-radius:0.1vw;
+    font-size:1vw;
+}
+
+main>.app{
+    height: auto;
+    min-height:70vh;
+    width:70%;
+    max-height: 60vh;
+    max-width:60vw;
+    background-color:#4467A4;
+    overflow:auto; 
+    display:inline-block;
+    padding: 2vw;
+}
+
+.app>h1{
+    font-size: 3vh;
+}
+
+.btn-color{
+    border: none;
+    height:2vh;
+    min-height: 10px;
+    margin: 0.2vw;;
+    width: 1vw;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-color:hover{
+    outline: 0.4vw solid #262833;
+}
+
+
+sidebar>.btn-group{
+    background-color:none;
+    width: auto;
+    height: auto;
+    margin-left: 2vw;
+    max-width:10vw;
+    padding:1vw;
+}
+
+sidebar>h2{
+    text-align:center;
+    color: white;
+    font-size:3vh;
+}
+
+sidebar>h3{
+    color: white;
+    font-size:2vh;
 }
 
 footer{
@@ -29,14 +104,64 @@ footer{
     font-style: italic;
 }
 
-a{
+footer>a{
     text-decoration:none;
     color: inherit;
 }
 
-a:hover{
+footer>a:hover{
     text-decoration:none;
     color: inherit;
     color:#606582;
     transition:0.5s;
+}
+
+/* Colors JS */
+
+#red{
+    background-color:red;
+}
+
+#green{
+    background-color:green;
+}
+
+#yellow{
+    background-color:yellow;
+}
+
+#brown{
+    background-color:rgb(51, 25, 7);
+}
+
+#blue{
+    background-color:blue;
+}
+
+#black{
+    background-color:black;
+}
+
+#purple{
+    background-color:purple;
+}
+
+#orange{
+    background-color:orange;
+}
+
+#cyan{
+    background-color:cyan;
+}
+
+#pink{
+    background-color:rgb(255, 85, 113);
+}
+
+#grey{
+    background-color:grey;
+}
+
+#sakurapink{
+    background-color:pink;
 }

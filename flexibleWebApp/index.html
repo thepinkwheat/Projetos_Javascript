@@ -33,6 +33,10 @@
                 </aside>
                 <aside class="btn-group">
                     <button class="btn-normal" onclick="createTittle()">Criar um título</button>
+                    <button class="btn-normal" onclick="createLorem()">Criar um Lorem</button>
+                    <button class="btn-normal" onclick="createParagraph()">Criar um parágrafo</button>
+                    <button class="btn-normal" onclick="reset()">Resetar</button> 
+                    <input type="file" class="btn-normal" accept="image/*" onchange="createImage(event)"/>
                 </aside>
                 
         </sidebar>
@@ -48,31 +52,4 @@
     </footer>
 </body>
 </html>
-<script>
-    let html = window.document.getElementById('webApp')
-
-    function changeTextColor(color = 'none'){
-        if(color == 'pink'){
-            html.style.background = "rgb(255, 85, 113)"
-        } else if(color == 'sakurapink'){
-            html.style.background = 'pink'
-        }else if(color == 'brown'){
-            html.style.background = "rgb(51, 25, 7)"
-        }else{
-            html.style.background = color
-        }
-    }
-
-    function createTittle(){
-        let userTittle = prompt('Diga o título que deseja colocar no app...')
-        if(userTittle != null){
-            let tittle = document.createElement('div')
-            tittle.class = 'tittle-app'
-            tittle.innerHTML = `<h1>${userTittle}</h1>`
-            tittle.style.fontSize = '2vh'
-            console.log('O título foi criado...')
-
-            html.appendChild(tittle)
-        }
-    }
-</script>
+<script src='js/script.js'></script>

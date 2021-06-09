@@ -45,7 +45,15 @@ main>sidebar{
     width: 100%;
     border:none;
     border-radius:0.1vw;
-    font-size:1vw;
+    font-size:0.75vw;
+    transition:1s;
+    cursor: pointer;
+}
+
+.btn-normal:hover{
+    background-color:#262833;
+    color: white;
+    transition:0.5s;
 }
 
 main>.app{
@@ -89,7 +97,7 @@ sidebar>.btn-group{
 }
 
 sidebar>h2{
-    text-align:center;
+    text-align:justify;
     color: white;
     font-size:3vh;
 }
@@ -107,6 +115,7 @@ footer{
 footer>a{
     text-decoration:none;
     color: inherit;
+    font-size: 3vh;
 }
 
 footer>a:hover{
@@ -114,6 +123,11 @@ footer>a:hover{
     color: inherit;
     color:#606582;
     transition:0.5s;
+}
+
+.image-app{
+    height:200px;
+    width: 200px;
 }
 
 /* Colors JS */
